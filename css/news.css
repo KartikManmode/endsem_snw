@@ -1,0 +1,300 @@
+
+*{
+    margin: 0;
+    font-family: 'Cinzel', serif;
+
+}
+body{
+    background-color: #0f172a;
+     margin: 0;
+    padding: 0;
+}
+.main{
+    position: fixed;
+    top: 0;
+}
+
+nav{
+    
+    position: sticky;
+    top: 25px;
+    margin-right: 40px;
+    margin-left: 40px;
+    z-index: 10;
+    overflow: scroll;
+}
+nav .main_opt{
+    display: flex;
+
+    /* height:50px ; */
+    /* background-color: rgb(0, 255, 255); */
+
+    /* border-radius: 10px; */
+    justify-content: space-between;
+        background: rgba(0, 0, 0, 0.55); 
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+}
+
+nav div {
+
+    padding-right: 2vw;
+    padding-left: 2vw;
+
+    align-content: center;
+
+}
+nav a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.8); 
+}
+nav a:hover{
+    color: #ff3b3b;
+}
+
+
+.prime-slider {
+    padding: 120px 40px 60px;
+    color: white;
+}
+
+.prime-slider h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #e5e7eb;
+    letter-spacing: 1px;
+}
+
+.slider-track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scrollbar-width: none;
+}
+
+
+.slide {
+    position: relative;
+
+    flex: 0 0 320px;
+    
+    height: 220px;
+    border-radius: 16px;
+
+    overflow: hidden;
+    background: #000;
+    scroll-snap-align: start;
+    box-shadow: 0px 10px 40px rgba(0,0,0,0.6);
+    transition: 0.3s ease;
+}
+
+
+.slide-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.8);
+}
+
+.slide-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0));
+}
+
+.slide-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+    color: white;
+}
+
+.slide-info p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.8);
+}
+
+.slide:hover {
+    transform: scale(1.08);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.9);
+}
+
+#region{
+    background-image: url("../src/Paldea-Region-Pokemon-Scarlet-Violet.jpg");
+    background-size: cover;
+}
+#legendary{
+    background-image: url("../src/new_legendary.jpg");
+    background-size: cover;
+
+}
+#mega{
+    background-image: url("../src/mega.jpg");
+    background-size: cover;
+
+}
+#movie{
+    background-image: url("../src/movie.jpg");
+    background-size: cover;
+
+}
+#ash{
+    background-image: url("../src/ash.jgp");
+    background-size: cover;
+
+}
+
+.slide:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 20px 60px rgba(0,0,0,0.9);
+
+}
+
+
+
+.events-section,.featured-story {
+  padding: 80px 40px;
+  color: white;
+}
+
+
+.events-section h2,.featured-story h2 {
+  font-size: 2.4rem;
+  margin-bottom: 25px;
+  color: #e5e7eb;
+}
+
+
+
+
+
+.featured-story {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  border-radius: 20px;
+  margin: 40px;
+  padding: 80px;
+  box-shadow: 0px 20px 60px rgba(0,0,0,0.8);
+}
+
+.featured-text p {
+  max-width: 600px;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+.featured-text button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #ff3b3b;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.featured-text button:hover {
+  background: #ff6b6b;
+}
+
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.event {
+  background: rgba(255,255,255,0.05);
+  padding: 20px 30px;
+  border-radius: 14px;
+  font-size: 1.2rem;
+  border-left: 4px solid #ff3b3b;
+  transition: 0.3s;
+}
+
+.event:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateX(10px);
+}
+
+
+
+
+
+
+
+
+.pokemon-footer {
+    background: #0b1120;
+    padding-top: 80px;
+    color: white;
+}
+
+.footer-glass {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 60px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 18px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.7);
+}
+
+.footer-section h3 {
+    font-size: 2.2rem;
+    color: #ffcc00;
+}
+
+.footer-section h4 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #93c5fd;
+}
+
+.footer-section p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.footer-section a {
+    display: block;
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    font-size: 1.1rem;
+    margin: 8px 0;
+    transition: 0.3s;
+}
+
+.footer-section a:hover {
+    color: #ff3b3b;
+    transform: translateX(6px);
+}
+
+
+@media (max-width: 880px) {
+    *{
+        font-size: 0.55rem;
+    }
+    nav .main_opt {
+        flex-wrap:wrap;
+        justify-content: center;
+        height: auto;
+
+    }
+    .footer-glass {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}

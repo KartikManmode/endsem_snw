@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/seasons.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Licorice&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav >
+        <div class="main_opt">
+            <div id="home"><a href="../index.html">home</a></div>
+            <div id="pokemons"><a href="pokemons.html">pokemons</a></div>
+            <div id="news"><a href="news.html">news</a></div>
+            <div id="seasons"><a href="seasons.html">seasons</a></div>
+            <div id="community"><a>community</a></div>
+            <div id="shop"><a>shop</a></div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="vids">
+        <button class="left" onclick="next(-1)">&#10096;</button>
+        <button class="right" onclick="next(+1)">&#10095;</button>
+        <div class="slide" >
+            <div class="content" >
+                <h1>Season 1</h1>
+            </div>
+            <div class="pic" id="one">
+
+            </div>
+        </div>
+        <div class="slide" >
+            <div class="content" >
+                <h1>Season 2</h1>
+            </div>
+            <div class="pic" id="two">
+
+            </div>
+        </div>
+        <div class="slide" >
+            <div class="content" >
+                <h1>Season 3</h1>
+            </div>
+            <div class="pic" id="three">
+
+            </div>
+        </div>
+        <div class="slide" >
+            <div class="content" >
+                <h1>Season 4</h1>
+            </div>
+            <div class="pic" id="four">
+
+            </div>
+        </div>
+
+
+
+        <script>
+        var ind=3;
+        show(ind);
+
+
+        function next(n){
+            console.log(ind)
+            show(ind+=n);
+
+        }
+
+        function show(n){
+            var i;
+            var x=document.getElementsByClassName("slide");
+
+            if(n>x.length){ind=1};
+            if(n<1){ind=x.length};
+
+            for(i=0;i<x.length;i++){
+                x[i].style.display="none"
+            };
+            x[ind-1].style.display="grid";
+
+        }
+
+    </script>
+</body>
+</html>
